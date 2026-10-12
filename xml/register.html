@@ -1,18 +1,18 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
+    <title>Daniel Santos | Message form</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 </head>
 
-<body>
+<body class="message-page">
     <nav>
         <div class="menu">
             <div class="logo">
-                <a href="#">Register Page</a>
+                <a href="index.html">Message form</a>
             </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -21,10 +21,10 @@
             </ul>
         </div>
     </nav>
-    <div class="img3"> <img src="images\2.jpg" alt="@Danielsantosjr23"> </div>
+    
 
-    <div class="center">
-        <form action="/form-page" method="post">
+    <main class="center">
+        <h1>Message form</h1><p id="form-note">Message sending is currently unavailable. You can reach me through the <a href="contact.html">social profiles on the contact page</a>.</p><form aria-describedby="form-note"><fieldset disabled>
             <ul>
                 <li>
                     <label for="name">Name:</label>
@@ -39,12 +39,10 @@
                     <textarea id="msg" name="user_message"></textarea>
                 </li>
                 <li class="button">
-                    <button type="submit">Send your message</button>
+                    <button type="button" disabled>Sending unavailable</button>
                 </li>
-            </ul>
-    </div>
-
-
+            </ul></fieldset></form>
+    </main>
 </body>
 
 </html>
